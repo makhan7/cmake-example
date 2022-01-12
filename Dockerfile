@@ -99,5 +99,8 @@ RUN echo "PWD is: $PWD"
 #RUN cmake --build build
 
 
+cmake -S . -B build -DWARNINGS_AS_ERRORS=OFF                 \
+                    -DBOOST_INCLUDEDIR=/usr/local/include/boost \
+                    -DBOOST_LIBRARYDIR=/usr/local/lib
 
 
